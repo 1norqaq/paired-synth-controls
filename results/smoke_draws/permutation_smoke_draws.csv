@@ -1,0 +1,11 @@
+draw,pipeline,S,flags
+1,A_good,0,
+1,A_noQ,0,
+2,A_good,0,
+2,A_noQ,0,
+3,A_good,0,
+3,A_noQ,1,ethnicity_E3
+4,A_good,0,
+4,A_noQ,0,
+5,A_good,0,
+5,A_noQ,0,

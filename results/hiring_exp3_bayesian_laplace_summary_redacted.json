@@ -1,0 +1,38 @@
+{
+  "data": {
+    "n": 51611,
+    "positives": 3962,
+    "positive_rate": 0.0767665807676658,
+    "clusters": 2508,
+    "note": "Proprietary data not included; aggregate redacted result only."
+  },
+  "B": 200,
+  "method_note": "Bayesian result uses full-N Gaussian-prior logistic regression with Laplace/MAP posterior approximation, not full MCMC.",
+  "bayes_laplace": {
+    "mean_coverage": 0.9491666666666667,
+    "MAE_OR_mean": 0.03731398099553169,
+    "MAE_OR_MC_95_interval": [
+      0.015782598023940865,
+      0.06569979914289853
+    ]
+  },
+  "frequentist_cluster": {
+    "mean_coverage": 0.9516666666666667,
+    "MAE_OR_mean": 0.03734395530004801,
+    "MAE_OR_MC_95_interval": [
+      0.01577372564824439,
+      0.06568995658419571
+    ]
+  },
+  "coverage_max_abs_difference_pp": 0.5000000000000004,
+  "posterior_cdf_uniformity_KS_stat": 0.011136561537347767,
+  "posterior_cdf_uniformity_KS_p": 0.9980364797896389,
+  "injections_anon": {
+    "Female": -0.15,
+    "R2": -0.3,
+    "E4": -0.2,
+    "E3": -0.4,
+    "E2": -0.7,
+    "E5": 0.3
+  }
+}
