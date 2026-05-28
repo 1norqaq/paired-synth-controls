@@ -6,7 +6,7 @@ This repository contains code for the experiments in the paper
 The repository has two parts:
 
 1. **Public reproducibility:** the ACS/Folktables replication can be rerun without proprietary data.
-2. **Proprietary hiring experiments:** the exact scripts, schema, synthetic example data, redacted per-draw outputs, and redacted aggregate outputs are provided, but the row-level hiring dataset is not released.
+2. **Proprietary hiring experiments:** the exact scripts, schema, synthetic example data, and redacted aggregate outputs are provided, but the row-level hiring dataset and private per-draw outputs are not released.
 
 See `REPRODUCIBILITY.md` for seeds, runtime expectations, exact/asymptotic modes,
 and privacy details.
@@ -110,7 +110,7 @@ python experiments/run_hiring_main_controls.py \
 The script implements the exact row-wise Bernoulli/refit paired-control
 procedure with cluster-robust logit audits, including the `A_good`, `A_iid`,
 `A_coarseQ`, and `A_noQ` diagnostic variants. Redacted private-data aggregate
-outputs are stored in `results/hiring_main_controls_summary_redacted.json`.
+outputs are stored in `results/hiring_main_controls_summary_redacted.json`. Private per-draw CSVs are not included in the release; use `--draws-dir` only to regenerate them locally when running on an authorized private file.
 
 ## Permutation negative-control baseline
 
@@ -135,7 +135,7 @@ Reported aggregate result on the private hiring dataset:
 | `A_noQ` | 1.120 | 59.7% | 40.3% | 6 |
 
 The most-flagged omitted-Q groups were E2 (46.7%), E3 (31.0%), and E6 (11.7%).
-Redacted per-draw outputs are included under `results/`.
+Only redacted aggregate summary outputs are included under `results/`; private per-draw outputs are intentionally not included. They can be regenerated locally with `--draws-dir` when a schema-compatible private file is available.
 
 ## Bayesian/Laplace positive-control sanity check
 
@@ -160,8 +160,10 @@ Reported aggregate result on the private hiring dataset:
 | frequentist cluster | 95.2% | 0.037 [0.016, 0.066] |
 
 The maximum per-group coverage difference was 0.5 percentage points, and the
-posterior-CDF/rank uniformity diagnostic gave KS p = 0.998. Redacted per-draw
-outputs are included under `results/`.
+posterior-CDF/rank uniformity diagnostic gave KS p = 0.998. Only redacted
+aggregate summary outputs are included under `results/`; private per-draw
+outputs are intentionally not included. They can be regenerated locally when a
+schema-compatible private file is available.
 
 
 ## Sections 6 and 8 supporting scripts
@@ -230,7 +232,7 @@ REPRODUCIBILITY.md                detailed reproducibility notes
 
 ## Privacy note
 
-Do **not** commit the proprietary hiring row-level data. The private experiments
-are reproducible by the authors with a local file matching the documented schema;
-reviewers can run the same code path on the synthetic example data and can fully reproduce the
-public Folktables experiment.
+Do **not** commit the proprietary hiring row-level data or private per-draw
+outputs. The private experiments are reproducible by the authors with a local
+file matching the documented schema; reviewers can run the same code path on the
+synthetic example data and can fully reproduce the public Folktables experiment.
