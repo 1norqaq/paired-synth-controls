@@ -1,7 +1,8 @@
 # Results
 
-This directory contains aggregate summaries and redacted per-draw outputs used to
-populate the paper tables. No row-level proprietary hiring records are included.
+This directory contains public ACS/Folktables per-draw outputs and aggregate
+summaries used to populate the paper tables. No row-level proprietary hiring
+records are included.
 
 ## Public ACS/Folktables
 
@@ -16,17 +17,13 @@ exact row-wise refit mode is included for smaller-B/subsample checks.
 
 ## Proprietary hiring experiments
 
-The row-level hiring data are not included. The files below are aggregate or
-redacted per-draw outputs only:
+The row-level hiring data are not included. The files below are redacted aggregate
+summary outputs only; no private hiring per-draw CSVs are included in the
+anonymized release.
 
 - `hiring_main_controls_summary_redacted.json`: Tables 3--4 main paired controls and omitted-Q diagnostic.
-- `hiring_exp2_permutation_summary_redacted.json`
-- `hiring_exp2_permutation_draws_redacted.csv`
-- `hiring_exp2_flag_counts_redacted.csv`
-- `hiring_exp3_bayesian_laplace_summary_redacted.json`
-- `hiring_exp3_bayes_laplace_draws_redacted.csv`
-- `hiring_exp3_frequentist_draws_redacted.csv`
-- `hiring_exp3_coverage_by_group_redacted.csv`
+- `hiring_exp2_permutation_summary_redacted.json`: permutation-baseline aggregate summary.
+- `hiring_exp3_bayesian_laplace_summary_redacted.json`: Bayesian/Laplace coverage aggregate summary.
 - `hiring_glass_ceiling_summary_redacted.json`: Section 6 breakpoint bootstrap aggregate output.
 - `hiring_interaction_recursion_summary_redacted.json`: Section 8 (Limitations L1) working-model recursion / interaction-aware check.
 - `hiring_measurement_error_summary_redacted.json`: Section 8 (Limitations L2) sensitive-attribute error sensitivity.
