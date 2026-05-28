@@ -2,7 +2,7 @@
 
 Small-scale verification run on the same random subsample of ACS CA 2018 5-year.
 
-- Input: `/mnt/data/folktables_ca_2018(1).parquet`
+- Input: `<path>/folktables_ca_2018.parquet`
 - Subsample: 50,000 rows
 - PUMA clusters: 265
 - Seed: 20260528
