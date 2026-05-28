@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "N": 50000,
+    "PUMA_clusters": 265,
+    "empirical_positive_rate": 0.38146,
+    "mean_Q_by_group": {
+      "Hispanic": 0.23110895010941823,
+      "NH-AmInd-AKNat": 0.3490356638697322,
+      "NH-Asian": 0.43172766584416417,
+      "NH-Black": 0.36596437786612807,
+      "NH-Other-Multi": 0.35804208192411285,
+      "NH-White": 0.484475731802083
+    },
+    "race_counts": {
+      "NH-White": 21851,
+      "Hispanic": 16252,
+      "NH-Asian": 8038,
+      "NH-Black": 2137,
+      "NH-Other-Multi": 1532,
+      "NH-AmInd-AKNat": 190
+    },
+    "B_negative": 100,
+    "B_positive": 100,
+    "seed": 20260528,
+    "method": "asymptotic",
+    "method_note": "Fast asymptotic Monte Carlo of logistic audit estimates using the expected PUMA-cluster sandwich covariance under the row-independent Bernoulli synthetic-control DGP. Use --method exact for row-wise refits with cluster-robust SEs.",
+    "base_irls_iterations": 6,
+    "alpha_star_positive": -2.585866495789249
+  },
+  "negative_control": {
+    "A_good": {
+      "mean_S": 0.06,
+      "fail_rate": 0.06,
+      "P_S_eq_0": 0.94,
+      "max_S": 1,
+      "flag_rates": {
+        "NH-Black": 0.01,
+        "NH-Asian": 0.01,
+        "NH-AmInd-AKNat": 0.02,
+        "Hispanic": 0.02,
+        "NH-Other-Multi": 0.0
+      },
+      "most_flagged": "\u2014 (diffuse)"
+    },
+    "A_noQ": {
+      "mean_S": 4.96,
+      "fail_rate": 1.0,
+      "P_S_eq_0": 0.0,
+      "max_S": 5,
+      "flag_rates": {
+        "NH-Black": 1.0,
+        "NH-Asian": 1.0,
+        "NH-AmInd-AKNat": 0.96,
+        "Hispanic": 1.0,
+        "NH-Other-Multi": 1.0
+      },
+      "most_flagged": "NH-Black (100.0%), NH-Asian (100.0%), Hispanic (100.0%), NH-Other-Multi (100.0%)"
+    }
+  },
+  "positive_control": {
+    "target_theta": {
+      "NH-Black": -0.5,
+      "NH-Asian": -0.2,
+      "NH-AmInd-AKNat": 0.0,
+      "Hispanic": -0.3,
+      "NH-Other-Multi": 0.0
+    },
+    "target_OR": {
+      "NH-Black": 0.6065306597126334,
+      "NH-Asian": 0.8187307530779818,
+      "NH-AmInd-AKNat": 1.0,
+      "Hispanic": 0.7408182206817179,
+      "NH-Other-Multi": 1.0
+    },
+    "mean_recovered_OR": {
+      "NH-Black": 0.603353719902434,
+      "NH-Asian": 0.816160074745036,
+      "NH-AmInd-AKNat": 0.9846309303055786,
+      "Hispanic": 0.7411036678972119,
+      "NH-Other-Multi": 0.9981299270887672
+    },
+    "coverage_by_group": {
+      "NH-Black": 0.95,
+      "NH-Asian": 0.94,
+      "NH-AmInd-AKNat": 0.95,
+      "Hispanic": 0.93,
+      "NH-Other-Multi": 0.91
+    },
+    "mean_coverage_nonnull": 0.94,
+    "mean_coverage_all_groups": 0.936,
+    "MAE_OR_nonnull_mean": 0.023041587433651988,
+    "MAE_OR_nonnull_MC95": [
+      0.00606380862533487,
+      0.0425255573519459
+    ],
+    "null_false_flags_per_draw_mean": 0.12,
+    "null_false_flags_P0": 0.89
+  }
+}

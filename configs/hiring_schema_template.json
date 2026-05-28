@@ -1,0 +1,30 @@
+{
+  "outcome_col": "Y_hist",
+  "q_col": "Q",
+  "cluster_col": "job_id",
+  "categorical_cols": ["gender", "ethnicity", "age_band", "location"],
+  "references": {
+    "gender": "Male",
+    "ethnicity": "E1",
+    "age_band": "18-29",
+    "location": "R1"
+  },
+  "injections": {
+    "gender_Female": -0.15,
+    "location_R2": -0.30,
+    "ethnicity_E4": -0.20,
+    "ethnicity_E3": -0.40,
+    "ethnicity_E2": -0.70,
+    "ethnicity_E5": 0.30
+  },
+  "label_map": {
+    "ethnicity_E1": "E1/ref",
+    "ethnicity_E2": "E2",
+    "ethnicity_E3": "E3",
+    "ethnicity_E4": "E4",
+    "ethnicity_E5": "E5",
+    "ethnicity_E6": "E6",
+    "gender_Female": "Female",
+    "location_R2": "R2"
+  }
+}
