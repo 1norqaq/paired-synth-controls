@@ -1,7 +1,7 @@
-# Auditing the Auditor: A Calibration Standard for Falsifiable Fairness Audits
+# Auditing the Auditor: Paired Synthetic Controls for Calibrating Fairness Audits
 
 This repository contains code for the experiments in the paper
-**"Auditing the Auditor: A Calibration Standard for Falsifiable Fairness Audits."**
+**"Auditing the Auditor: Paired Synthetic Controls for Calibrating Fairness Audits."**
 
 The repository has two parts:
 
