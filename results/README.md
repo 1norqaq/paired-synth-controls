@@ -21,7 +21,7 @@ The row-level hiring data are not included. The files below are redacted aggrega
 summary outputs only; no private hiring per-draw CSVs are included in the
 anonymized release.
 
-- `hiring_main_controls_summary_redacted.json`: Tables 3--4 main paired controls and omitted-Q diagnostic.
+- `hiring_main_controls_summary_redacted.json`: Tables 4--5 main paired controls and omitted-Q diagnostic.
 - `hiring_exp2_permutation_summary_redacted.json`: permutation-baseline aggregate summary.
 - `hiring_exp3_bayesian_laplace_summary_redacted.json`: Bayesian/Laplace coverage aggregate summary.
 - `hiring_glass_ceiling_summary_redacted.json`: Section 6 breakpoint bootstrap aggregate output.

@@ -2,7 +2,7 @@
 
 Produced by `scripts/make_tables.py`.
 
-## Table 5: ACS/Folktables replication
+## Table 6: ACS/Folktables replication
 
 | Pipeline | mean S | fail rate | most-flagged |
 |---|---:|---:|---|
@@ -12,7 +12,7 @@ Produced by `scripts/make_tables.py`.
 Positive control: mean non-null coverage = 94.2%; MAE_OR = 0.005 [0.001, 0.011].
 N = 950,197; method = asymptotic
 
-## Tables 3--4: private hiring paired controls and diagnostic
+## Tables 4--5: private hiring paired controls and diagnostic
 
 Negative control: P(S=0) = 0.950; mean S = 0.06; max S = 2.
 Positive control: mean injected-group coverage = 94.6%; MAE_OR = 0.037 [0.016, 0.068].

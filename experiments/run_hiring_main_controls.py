@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Private hiring main paired-control and omitted-Q diagnostic experiment.
 
-This script implements the analyses reported in Tables 3--4 of the paper for a
+This script implements the analyses reported in Tables 4--5 of the paper for a
 schema-compatible hiring dataset. The proprietary row-level data are not in the
 repository; the script can be checked on ``data/synthetic_hiring_example.csv``
 and rerun by the authors on the private file.

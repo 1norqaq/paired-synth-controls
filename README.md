@@ -93,7 +93,7 @@ available.
 
 ## Private hiring main paired-control and diagnostic analyses
 
-The core hiring analyses reported in Tables 3--4 can be regenerated on a local
+The core hiring analyses reported in Tables 4--5 of the paper can be regenerated on a local
 schema-compatible private file. The repository includes the full script but not
 the row-level proprietary data.
 
@@ -208,7 +208,7 @@ Redacted private-data aggregate outputs for these analyses are included under
 python scripts/make_tables.py --results-dir results --out results/table_snippets.md
 ```
 
-This regenerates the Table 5 and Section 5 construction-comparison numbers from the stored JSON summaries.
+This regenerates the Table 6 and Section 5 construction-comparison numbers from the stored JSON summaries.
 
 ## Repository layout
 

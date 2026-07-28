@@ -44,7 +44,7 @@ def main():
     lines.append("# Result snippets from JSON summaries\n")
     lines.append("Produced by `scripts/make_tables.py`.\n")
 
-    lines.append("## Table 5: ACS/Folktables replication\n")
+    lines.append("## Table 6: ACS/Folktables replication\n")
     lines.append("| Pipeline | mean S | fail rate | most-flagged |")
     lines.append("|---|---:|---:|---|")
     for name in ["A_good", "A_noQ"]:
@@ -66,7 +66,7 @@ def main():
     lines.append("")
 
     if main_controls is not None:
-        lines.append("## Tables 3--4: private hiring paired controls and diagnostic\n")
+        lines.append("## Tables 4--5: private hiring paired controls and diagnostic\n")
         neg = main_controls["controls"]["negative_control"]
         pos = main_controls["controls"]["positive_control"]
         mae_lo, mae_hi = pos["MAE_OR_MC95"]
